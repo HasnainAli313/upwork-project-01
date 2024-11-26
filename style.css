@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -77,6 +80,7 @@ header div div p{
     padding: 10px;
     border-radius: 10px;           
 }
+
 .welcome h1{
     margin-top: 10px;
 }
@@ -102,6 +106,83 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+/* Services*/
+.services{
+    color: white;
+    background: #222222;
+    margin-top: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;           
+}
+
+.service{
+    display: flex;
+    justify-content: space-between;
+}
+.service div {
+    margin-top: 20px;
+}
+.services h1 {
+    margin-top: 10px;
+}
+.service img{
+    border-radius: 20px !important; 
+    
+}
+.service img:hover{
+    border-radius: 20px !important;
+    transform: scale(1.01); 
+    transition: transform 0.3s ease-in-out;
+
+}
+
+/* About Us */
+.about {
+    margin-top: 20px;
+}
+.aboutlist{
+    list-style-position: inside;
+}
+.aboutHeading{
+    margin-top: 5px;
+}
+
+/* Footer */
+footer{
+    padding: 10px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+.footer-nav li a{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+.footer-nav li a:hover{
+  color: red;
+  transition: color 0.5s ease-in-out;
+}
+footer p{
+  text-align: center;
+  margin-top: 5px;
+}
+.services-list a{
+    text-decoration: none;
+    color: black;
+}
+.services-list a:hover{
+    color: red;
+}
+.contactus p{
+    margin-top: 5px;
 }
 /* Mobile View */
 @media screen and (max-width:786px) {
@@ -148,6 +229,19 @@ hr{
         margin-top: 20px;
         padding: 5px;
     }
+    .services{
+        margin: 2px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+    .service{
+    flex-wrap: wrap-reverse;
+    justify-content: center;    
+    }
+    .service div p{
+        font-size: small;
+        margin-top: 10px;
+    }
     .offer{
         padding: 15px;
     }
@@ -160,6 +254,12 @@ hr{
     .mobile-numbers h3{
         padding: 5px;
         
+    }
+    .about {
+        font-size: small;
+    }
+    footer{
+        font-size: small;
     }
   
 }          
